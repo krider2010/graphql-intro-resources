@@ -39,6 +39,35 @@ Other things that may or may not have been mentioned in the Workshop that may be
 * [GraphQL Specification](https://graphql.github.io/graphql-spec/)
 * [Relay Cursor Connections Specification](https://facebook.github.io/relay/graphql/connections.htm)
 * The official [GitHub Octokit GraphQL](https://github.com/octokit/graphql.js) client, in JavaScript
+* A rad GitHub Action [Request Action](https://github.com/octokit/request-action) that allows you to use GitHub's API for abitrary requests as part of a workflow. This example here shows how to use GraphQL with it:
+
+    ```yaml
+    name: "test-local"
+    on:
+      pull_request:
+      push:
+        branches:
+          - master
+          - 'releases/*'
+    
+    jobs:
+      test:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: octokit/request-action@v1.x
+          with:
+            route: POST /graphql
+            query: |
+              query {
+                viewer {
+                  login
+                  name
+                }
+              }
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+    ```
+
 * A more complete [introspection query](introspection.graphql) that can be used to discover what a schema looks like via querying
 
 
