@@ -38,7 +38,6 @@ Other things that may or may not have been mentioned in the Workshop that may be
 
 * [GraphQL Specification](https://graphql.github.io/graphql-spec/)
 * [Relay Cursor Connections Specification](https://facebook.github.io/relay/graphql/connections.htm)
-https://facebook.github.io/relay/graphql/connections.htm
 * The official [GitHub Octokit GraphQL](https://github.com/octokit/graphql.js) client, in JavaScript
 * A more complete [introspection query](introspection.graphql) that can be used to discover what a schema looks like via querying
 
