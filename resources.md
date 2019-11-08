@@ -39,7 +39,8 @@ Other things that may or may not have been mentioned in the Workshop that may be
 * [GraphQL Specification](https://graphql.github.io/graphql-spec/)
 * [Relay Cursor Connections Specification](https://facebook.github.io/relay/graphql/connections.htm)
 * The official [GitHub Octokit GraphQL](https://github.com/octokit/graphql.js) client, in JavaScript
-* A rad GitHub Action [Request Action](https://github.com/octokit/request-action) that allows you to use GitHub's API for abitrary requests as part of a workflow. This example here shows how to use GraphQL with it:
+* A rad GitHub Action [GraphQL Action](https://github.com/octokit/graphql-action/) that makes it simple to send a GraphQL query to the GitHub API as part of a workflow.
+* There is also GitHub Action [Request Action](https://github.com/octokit/request-action) that allows you to use GitHub's API for abitrary requests as part of a workflow. Which might be useful if you want to mix GraphQL and REST. This example here shows how to use GraphQL with it:
 
     ```yaml
     name: "test-local"
@@ -77,4 +78,3 @@ Other things that may or may not have been mentioned in the Workshop that may be
 * Helping Hand Image by <a href="https://pixabay.com/users/sasint-3639875/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1807524">Sasin Tipchai</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1807524">Pixabay</a>
 * Speedometer Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=653246">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=653246">Pixabay</a>
 * Confused Penguin Image by <a href="https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=158551">OpenClipart-Vectors</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=158551">Pixabay</a>
-
